@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: lato; */
+    color-scheme: dark ;
+    color-scheme: light dark ;
+    font-family: "Open Sans", sans-serif;
+ 
+  }
+  
+  :root{
+    --bg-color:#f4f3ff;
+    --btn-color:#646cff;
+    --dark-color:#242424;
+    --helper-color:#99b9ff;
+  }
+  
+  html{
+    font-size: 62.5%;
+  }
+  body{
+    min-width: 32rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+  }
+.container{
+    width: 80vw;
+    margin: auto;
+}
+  
+  h1{
+    font-size: 5.4rem;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+
+  .section-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 3rem;
+
+  }
+  
+  p,
+  li,
+  label,
+  input,
+  textarea{
+    font-size: 1.8rem;
+    line-height: 1.56;
+    letter-spacing: 0.1rem;
+    word-spacing: 0.06rem;
+  }
+  
+  a{
+    font-weight: 500;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    color: var(--btn-color);
+    text-decoration: inherit;
+  }
+  
+  li{
+    list-style: none;
+  }
+
+  /* navbar styling */
+  header{
+    width: 80vw;
+    margin: 2rem auto;
+    & nav{
+        display: flex;
+        justify-content: space-between;
+        & .logo{
+            font-size: 1.5rem;
+            cursor: pointer;
+            width: 10rem;
+            height: 10rem;
+            & img{
+                width: inherit;
+                height: inherit;
+                color: #fff;
+            }
+        }
+        & ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            & li a{
+                margin: 0 1rem;
+            }
+        }
+    }
+  }
+
+
+  /* navbar styling ended */
+  /* hero section */
+  main{
+    & .hero-container{
+        text-transform: uppercase;
+        padding: 10rem 4rem;
+        background-image: url("./images/hero.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 40rem;
+        color: #fff;
+        & p{
+            margin: 1rem 0;
+        }
+        & h1{
+            margin-bottom: 2.5rem;
+        }
+    }
+  }
+  /* ABOUT US */
+.about-us {
+& p{
+  text-align: center;
+}
+}
+
+
+
+  /* team member section */
+  .team-member{
+    & .container h1{
+      text-align: center;
+      font-weight: 200;
+      text-transform: uppercase;
+      margin-top: 3.7rem;
+      margin-bottom: 2.5rem ;
+    }
+    & .image-container{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      /* border: 0.1rem solid red; */
+      
+    }
+    & div img{
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+
+  .our-mission {
+    & p{
+      text-align: center;
+    }
+  }
+
+  /* contact us section */
+  .contact-us{
+    & .container{
+      /* border: 1px solid red; */
+      background: #dedede;
+      padding: 2rem 3rem;
+    }
+    & .contactForm input, textarea{
+      padding: .8rem;
+      margin: 1rem 0;
+      width: 50%;
+    }
+    & .contactForm  textarea{
+    resize: none;
+    width: 100%;
+    }
+    & .btn-container{
+      width: 100%;
+      text-align: end;
+
+      & .btn{
+        padding: .6rem 1.5rem;
+        letter-spacing: .2rem;
+        font-weight: 500;
+        background: rgb(108, 108, 244);
+        border: .1rem solid transparent;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+   
+  }
+
+  /* footer styling */
+
+  footer{
+    margin: 1rem auto;
+    margin-top: auto;
+    width: 80vw;
+    text-align: center;
+    border: 0.1rem solid #fff;
+    border-radius: 0.2rem;
+    padding: 1rem 2rem;
+  }
