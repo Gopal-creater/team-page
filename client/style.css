@@ -114,10 +114,8 @@ main {
   }
 }
 /* ABOUT US */
-.about-us {
-  & p {
+.about-us p{  
     text-align: center;
-  }
 }
 
 /* team member section */
@@ -129,22 +127,35 @@ main {
     margin-top: 3.7rem;
     margin-bottom: 2.5rem;
   }
-  & .image-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    /* border: 0.1rem solid red; */
+  & .team{
+    /* display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   }
   & div img {
-    width: 20rem;
-    height: 20rem;
+    width: 18rem;
+    height: 18rem;
   }
+}
+
+.name{
+  font-weight: 600;
 }
 
 .our-mission {
   & p {
     text-align: center;
   }
+}
+.image-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  /* border: 0.1rem solid red; */
 }
 
 /* contact us section */
@@ -190,9 +201,9 @@ main {
 .team-member {
   text-align: center;
   padding: 20px;
-  background-color: #d3d3d3;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* background-color: #d3d3d3; */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .team-member img {
@@ -244,7 +255,9 @@ footer {
   .team {
     grid-template-columns: repeat(1, 1fr);
   }
-
+  .image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
   .team-member img {
     width: 120px;
     height: 120px;
