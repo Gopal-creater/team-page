@@ -132,7 +132,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   }
@@ -141,10 +141,17 @@ main {
     height: 18rem;
   }
 }
+.member{
+  width: 29rem;
+
+}
 
 .name{
   font-weight: 600;
 }
+/* .role{
+  font-size: 1.5rem;
+} */
 
 .our-mission {
   & p {
@@ -232,14 +239,17 @@ footer {
 }
 
 @media (max-width: 768px) {
-  header nav ul {
-    flex-direction: column;
+  html{
+    font-size: 50%;
   }
+ 
 
   header nav ul li {
     margin: 10px 0;
   }
-
+h1{
+  font-size: 3rem;
+}
   main {
     padding: 10px;
   }
