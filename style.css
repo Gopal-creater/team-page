@@ -110,7 +110,7 @@ main {
     background-position: center;
     height: 40rem;
     color: #fff;
-    
+
     & p {
       margin: 1rem 0;
     }
@@ -119,7 +119,6 @@ main {
     }
   }
 }
-
 
 /* ABOUT US */
 .about-us p {
@@ -135,12 +134,11 @@ main {
     margin-top: 3.7rem;
     margin-bottom: 2.5rem;
   }
-  & .team{
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  & .team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
   & div img {
     width: 18rem;
@@ -233,6 +231,11 @@ main {
 
 .team-member h3 {
   font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.team-member h4 {
+  font-size: 15px;
   margin-bottom: 5px;
 }
 
